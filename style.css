@@ -1,0 +1,33 @@
+/* Google Fonts - Inter */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto:wght@500&display=swap");
+
+#menu {
+  float: right;
+  height: 60px;
+  color: #acb7c3;
+  /* margin-top: -197px;
+  margin-right: 7px; */
+}
+
+#content-1 {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  position: absolute;
+  margin-top: 78px;
+  font-size: x-large;
+}
+
+.content-1-p {
+  font-size: larger;
+}
+
+.clr-blue {
+  color: #172b4d;
+}
+
+.clr-green {
+  color: #36b37e;
+}
+.l-s {
+  height: 30px;
+}
