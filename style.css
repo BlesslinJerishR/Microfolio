@@ -5,8 +5,6 @@
   float: right;
   height: 60px;
   color: #acb7c3;
-  /* margin-top: -197px;
-  margin-right: 7px; */
 }
 
 #content-1 {
@@ -19,6 +17,8 @@
 
 .content-1-p {
   font-size: larger;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .clr-blue {
