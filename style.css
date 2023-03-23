@@ -31,3 +31,9 @@
 .l-s {
   height: 30px;
 }
+
+.flex {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
