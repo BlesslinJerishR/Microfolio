@@ -1,4 +1,5 @@
 /* Google Fonts - Inter */
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto:wght@500&display=swap");
 
 #menu {
@@ -36,4 +37,20 @@
   display: flex;
   text-align: center;
   justify-content: center;
+}
+
+#i1 {
+  display: none;
+}
+
+/* Mobile View */
+
+@media only screen and (max-width: 600px) {
+  #i1 {
+    display: inline;
+    position: absolute;
+    margin-left: -130px;
+    top: 78px;
+    overflow: hidden;
+  }
 }
