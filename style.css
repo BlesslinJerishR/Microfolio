@@ -2,6 +2,12 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto:wght@500&display=swap");
 
+html,
+body {
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden !important;
+}
+
 #menu {
   float: right;
   height: 60px;
@@ -51,7 +57,73 @@
     display: inline;
     position: absolute;
     margin-left: -130px;
-    top: 78px;
+    top: -182px;
     overflow: hidden;
   }
+}
+
+#d {
+  border-radius: 50%;
+  border: 1px solid #dfe1e6;
+  padding: 5px;
+  margin-top: 7%;
+  background: #fff;
+}
+
+#content-2 {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  justify-content: center;
+  position: absolute;
+  margin-top: 900px;
+  margin-left: 25%;
+  font-size: x-large;
+}
+
+#card {
+  height: 474px;
+  width: 327px;
+  border: 1px solid #ebf0ee;
+  text-align: center;
+  background-color: #ebf0ee;
+  justify-content: center;
+}
+
+.li {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin-right: 38px;
+}
+
+li {
+  background-color: #ebf0ee;
+  font-size: smaller;
+  padding: 2px;
+  font-size: small;
+}
+
+.card1 {
+  position: relative;
+  top: 260px;
+  background-color: #fff;
+  height: 210px;
+  padding-top: 10px;
+}
+
+.btn {
+  height: 45px;
+  background-color: #36b37f;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+}
+
+.s-card {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  position: absolute;
+  top: 1180px;
+  left: 12%;
 }
