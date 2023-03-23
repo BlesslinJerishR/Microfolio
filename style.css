@@ -8,6 +8,10 @@ body {
   overflow-x: hidden !important;
 }
 
+body {
+  position: relative;
+}
+
 #menu {
   float: right;
   height: 60px;
@@ -17,7 +21,7 @@ body {
 #content-1 {
   font-family: "Inter", sans-serif;
   text-align: center;
-  position: absolute;
+  position: relative;
   margin-top: 78px;
   font-size: x-large;
 }
@@ -59,6 +63,7 @@ body {
     margin-left: -130px;
     top: -182px;
     overflow: hidden;
+    background-size: contain;
   }
 }
 
@@ -74,19 +79,19 @@ body {
   font-family: "Inter", sans-serif;
   text-align: center;
   justify-content: center;
-  position: absolute;
-  margin-top: 900px;
-  margin-left: 25%;
+  position: relative;
   font-size: x-large;
 }
 
 #card {
+  border-radius: 8px;
   height: 474px;
   width: 327px;
   border: 1px solid #ebf0ee;
   text-align: center;
-  background-color: #ebf0ee;
   justify-content: center;
+  background-color: #ebf0ee;
+  margin-top: -120px;
 }
 
 .li {
@@ -99,7 +104,8 @@ body {
 li {
   background-color: #ebf0ee;
   padding: 2px;
-  font-size: small;
+  font-size: x-small;
+  border-radius: 8px;
 }
 
 .card1 {
@@ -108,6 +114,10 @@ li {
   background-color: #fff;
   height: 210px;
   padding-top: 10px;
+  border-bottom: 1px solid #ebf0ee;
+  border-radius: 8px;
+  /* border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px; */
 }
 
 .btn {
@@ -122,7 +132,6 @@ li {
   display: flex;
   text-align: center;
   justify-content: center;
-  position: absolute;
-  top: 1180px;
-  left: 12%;
+  margin-top: 160px;
+  padding-bottom: 10px;
 }
