@@ -168,6 +168,8 @@ li {
   .content-3 {
     background-image: url("imgs/about.png");
     background-size: cover;
+    position: relative;
+    background-position: 5px -69px;
   }
 
   .abt-1 {
@@ -184,8 +186,8 @@ li {
 }
 
 .skill {
-  width: 300px;
-  height: 316px;
+  width: 416px;
+  height: 359px;
   border: 1px solid #c1c7d0;
   border-radius: 8px;
   background-color: #ebf0ee;
