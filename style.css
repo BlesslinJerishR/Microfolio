@@ -14,8 +14,6 @@ body {
 
 #menu {
   float: right;
-  height: 60px;
-  color: #acb7c3;
 }
 
 #content-1 {
@@ -60,8 +58,9 @@ body {
   #i1 {
     display: inline;
     position: absolute;
-    margin-left: -130px;
-    top: -182px;
+    /* margin-left: -130px;
+    top: -182px; */
+    height: 400px;
     overflow: hidden;
     background-size: contain;
   }
