@@ -1,3 +1,7 @@
+body::-webkit-scrollbar {
+  display: none;
+}
+
 /* Google Fonts - Inter */
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto:wght@500&display=swap");
@@ -172,4 +176,66 @@ li {
     margin-top: -65px;
     margin-left: 82px;
   }
+}
+
+.skills {
+  display: flex;
+  margin-top: 60px;
+}
+
+.skill {
+  width: 300px;
+  height: 316px;
+  border: 1px solid #c1c7d0;
+  border-radius: 8px;
+  background-color: #ebf0ee;
+}
+
+.li-2 {
+  background-color: #fff;
+  color: #36b37e;
+}
+
+.p1 {
+  margin: 0;
+  top: 50%;
+  -ms-transform: translateY(45%);
+  transform: translateY(25%);
+}
+
+.content-4 {
+  font-size: x-large;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.in {
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  width: 300px;
+  height: 48px;
+  font-style: italic;
+  margin-bottom: 24px;
+}
+
+textarea {
+  width: 300px;
+  height: 117px;
+  font-family: "Inter", sans-serif;
+  padding: -20px;
+}
+
+textarea::placeholder {
+  position: relative;
+  left: -20px;
+}
+
+.btn-3 {
+  margin-top: 30px;
+}
+
+.foot {
+  position: absolute;
+  margin-top: 13px;
+  margin-left: 153px;
 }
