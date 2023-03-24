@@ -1,0 +1,133 @@
+/* Google Fonts - Inter */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto:wght@500&display=swap");
+
+html,
+body {
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden !important;
+}
+
+body {
+  position: relative;
+}
+
+#menu {
+  float: right;
+}
+
+#content-1 {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  position: relative;
+  margin-top: 78px;
+  font-size: x-large;
+}
+
+.content-1-p {
+  font-size: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  color: #172b4d;
+}
+
+.clr-blue {
+  color: #172b4d;
+}
+
+.clr-green {
+  color: #36b37e;
+}
+
+.l-s {
+  height: 30px;
+}
+
+.flex {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+#i1 {
+  display: none;
+}
+
+/* Mobile View */
+
+@media only screen and (max-width: 600px) {
+  #content-1 {
+    background-image: url(imgs/i1.png);
+    background-size: contain;
+  }
+}
+
+#d {
+  border-radius: 50%;
+  border: 1px solid #dfe1e6;
+  padding: 5px;
+  margin-top: 7%;
+  background: #fff;
+}
+
+#content-2 {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  font-size: x-large;
+}
+
+#card {
+  border-radius: 8px;
+  height: 474px;
+  width: 327px;
+  border: 1px solid #ebf0ee;
+  text-align: center;
+  justify-content: center;
+  background-color: #ebf0ee;
+  margin-top: -120px;
+}
+
+.li {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin-right: 38px;
+}
+
+li {
+  background-color: #ebf0ee;
+  padding: 2px;
+  font-size: medium;
+  border-radius: 8px;
+}
+
+.card1 {
+  position: relative;
+  top: 260px;
+  background-color: #fff;
+  height: 210px;
+  padding-top: 10px;
+  border-bottom: 1px solid #ebf0ee;
+  border-radius: 8px;
+
+  /* border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px; */
+}
+
+.btn {
+  height: 45px;
+  background-color: #36b37f;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+}
+
+.s-card {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 160px;
+  padding-bottom: 10px;
+}
