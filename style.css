@@ -28,6 +28,7 @@ body {
   font-size: larger;
   padding-right: 20px;
   padding-left: 20px;
+  color: #172b4d;
 }
 
 .clr-blue {
@@ -55,13 +56,8 @@ body {
 /* Mobile View */
 
 @media only screen and (max-width: 600px) {
-  #i1 {
-    display: inline;
-    position: absolute;
-    /* margin-left: -130px;
-    top: -182px; */
-    height: 400px;
-    overflow: hidden;
+  #content-1 {
+    background-image: url(imgs/i1.png);
     background-size: contain;
   }
 }
