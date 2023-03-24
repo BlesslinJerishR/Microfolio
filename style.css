@@ -53,15 +53,6 @@ body {
   display: none;
 }
 
-/* Mobile View */
-
-@media only screen and (max-width: 600px) {
-  #content-1 {
-    background-image: url(imgs/i1.png);
-    background-size: contain;
-  }
-}
-
 #d {
   border-radius: 50%;
   border: 1px solid #dfe1e6;
@@ -94,6 +85,8 @@ body {
   justify-content: space-between;
   list-style-type: none;
   margin-right: 38px;
+  text-align: center;
+  justify-content: center;
 }
 
 li {
@@ -101,6 +94,7 @@ li {
   padding: 2px;
   font-size: medium;
   border-radius: 8px;
+  padding: 8px;
 }
 
 .card1 {
@@ -109,6 +103,7 @@ li {
   background-color: #fff;
   height: 210px;
   padding-top: 10px;
+  border: 1px solid #ebf0ee;
   border-bottom: 1px solid #ebf0ee;
   border-radius: 8px;
 
@@ -122,6 +117,7 @@ li {
   color: #fff;
   border: none;
   border-radius: 7px;
+  margin-top: 8px;
 }
 
 .s-card {
@@ -130,4 +126,50 @@ li {
   justify-content: center;
   margin-top: 160px;
   padding-bottom: 10px;
+}
+
+.content-3 {
+  font-size: x-large;
+  margin-top: 60px;
+}
+
+.center {
+  text-align: center;
+  justify-content: center;
+}
+
+.content-3-p {
+  font-size: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  color: #172b4d;
+}
+
+.btn-2 {
+  width: 130px;
+}
+
+.abt-1 {
+  display: none;
+}
+
+/* Mobile View */
+
+@media only screen and (max-width: 600px) {
+  #content-1 {
+    background-image: url("imgs/i1.png");
+    background-size: cover;
+  }
+
+  .content-3 {
+    background-image: url("imgs/about.png");
+    background-size: cover;
+  }
+
+  .abt-1 {
+    display: inline-block;
+    position: absolute;
+    margin-top: -65px;
+    margin-left: 82px;
+  }
 }
