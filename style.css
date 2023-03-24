@@ -1,7 +1,3 @@
-body::-webkit-scrollbar {
-  display: none;
-}
-
 /* Google Fonts - Inter */
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto:wght@500&display=swap");
@@ -14,6 +10,10 @@ body {
 
 body {
   position: relative;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 #menu {
@@ -86,7 +86,6 @@ body {
 
 .li {
   display: flex;
-  justify-content: space-between;
   list-style-type: none;
   margin-right: 38px;
   text-align: center;
@@ -95,7 +94,6 @@ body {
 
 li {
   background-color: #ebf0ee;
-  padding: 2px;
   font-size: medium;
   border-radius: 8px;
   padding: 8px;
