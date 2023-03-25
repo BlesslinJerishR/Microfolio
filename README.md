@@ -32,8 +32,10 @@ After you're finished please remove all the comments and instructions!
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
 - [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [📝 License](#license)
@@ -48,7 +50,17 @@ After you're finished please remove all the comments and instructions!
 
 - HTML
 - CSS
+<!-- Features -->
 
+### Key Features <a name="key-features"></a>
+
+> key features of the application.
+
+- **My Portfolio**
+- **Mobile Responsive**
+- **My Projects**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
@@ -72,7 +84,16 @@ You can deploy this project using: Netlify
 - LinkedIn: [BlesslinJerishR](https://www.linkedin.com/in/blesslin-jerish-8b8bbb257/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- FUTURE FEATURES -->
 
+## 🔭 Future Features <a name="future-features"></a>
+
+> Future Features.
+
+- [ ] **Desktop Version**
+- [ ] **Fully Responsive**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
