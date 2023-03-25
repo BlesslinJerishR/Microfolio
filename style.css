@@ -97,6 +97,7 @@ li {
   font-size: medium;
   border-radius: 8px;
   padding: 8px;
+  list-style-type: none;
 }
 
 .card1 {
@@ -184,8 +185,8 @@ li {
 }
 
 .skill {
-  width: 416px;
-  height: 359px;
+  width: 340px;
+  height: 345px;
   border: 1px solid #c1c7d0;
   border-radius: 8px;
   background-color: #ebf0ee;
@@ -250,4 +251,19 @@ textarea::placeholder {
 
 .works {
   display: grid;
+}
+
+.s {
+  color: #344563;
+  font-size: 24px;
+}
+
+ul {
+  margin: 0;
+}
+
+.skills-div {
+  text-align: center;
+  justify-content: center;
+  margin-left: -37px;
 }
