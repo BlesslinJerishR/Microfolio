@@ -92,8 +92,11 @@ body::-webkit-scrollbar {
   justify-content: center;
 }
 
-li {
+.li-bg {
   background-color: #ebf0ee;
+}
+
+li {
   font-size: medium;
   border-radius: 8px;
   padding: 8px;
@@ -258,12 +261,8 @@ textarea::placeholder {
   font-size: 24px;
 }
 
-ul {
-  margin: 0;
-}
-
 .skills-div {
   text-align: center;
   justify-content: center;
-  margin-left: -37px;
+  margin-left: -33px;
 }
