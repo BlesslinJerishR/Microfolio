@@ -247,3 +247,7 @@ textarea::placeholder {
 .btn:active {
   background-color: #008552;
 }
+
+.works {
+  display: grid;
+}
