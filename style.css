@@ -264,5 +264,141 @@ textarea::placeholder {
 .skills-div {
   text-align: center;
   justify-content: center;
-  margin-left: -33px;
+  margin-left: -30px;
+}
+
+.navbar {
+  display: none;
+}
+
+.hide-mob {
+  display: none;
+}
+
+@media only screen and (min-width: 767px) {
+  #menu {
+    display: none;
+  }
+
+  .navbar {
+    display: flex;
+    gap: 30px;
+    text-align: center;
+    justify-content: center;
+    margin-right: 50px;
+  }
+
+  .navbar > li > a {
+    text-decoration: none;
+    color: #172b4d;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .hide-mob {
+    display: block;
+  }
+
+  #social-media {
+    margin-top: 50px;
+  }
+
+  #d {
+    margin-top: 160px;
+  }
+
+  #content-1 {
+    background-image: url(/imgs/header-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 0;
+  }
+
+  .c1 {
+    margin-top: 80px;
+  }
+
+  .works-flex {
+    display: relative;
+    display: grid;
+    grid-template-rows: 150px 150px;
+    grid-template-columns: 150px 150px 150px;
+    grid-column-gap: 200px;
+    grid-row-gap: 400px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .content-3 {
+    margin-top: 500px;
+    background-image: url(/imgs/about-desktop.svg);
+    background-size: cover;
+  }
+
+  .skills-div {
+    margin-top: 100px;
+    display: flex;
+  }
+
+  .foot-flex {
+    display: flex;
+  }
+
+  .content-4 {
+    text-align: justify;
+    height: 500px;
+    width: 600px;
+  }
+
+  #footer-social {
+    text-align: center;
+    justify-content: center;
+  }
+
+  form {
+    margin-top: 80px;
+  }
+
+  .in {
+    width: 484px;
+  }
+
+  .text-in {
+    width: 484px;
+  }
+
+  .btn-3 {
+    margin-left: -355px;
+  }
+
+  #about-2-desktop {
+    margin-top: -91px;
+    margin-left: -720px;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .f {
+    position: absolute;
+  }
+
+  .f1 {
+    margin-top: -372px;
+    margin-left: -45px;
+  }
+
+  .f2 {
+    margin-top: -111px;
+    margin-left: 136px;
+  }
+
+  .f3 {
+    margin-top: -480px;
+    margin-left: 1027px;
+  }
+  footer {
+    margin-left: 50px;
+  }
 }
