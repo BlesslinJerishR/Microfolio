@@ -293,7 +293,7 @@ textarea::placeholder {
 }
 
 button:hover {
-  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
 @media only screen and (min-width: 767px) {
@@ -420,6 +420,8 @@ button:hover {
   .f3 {
     margin-top: -480px;
     margin-left: 1027px;
+    position: absolute;
+    right: 0;
   }
 
   footer {
@@ -436,10 +438,5 @@ button:hover {
 
   .foot {
     display: none;
-  }
-
-  .f3 {
-    position: absolute;
-    right: 0;
   }
 }
