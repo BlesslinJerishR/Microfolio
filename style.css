@@ -331,7 +331,7 @@ textarea::placeholder {
   }
 
   .c1 {
-    margin-top: 80px;
+    margin-top: 160px;
   }
 
   .works-flex {
@@ -426,9 +426,5 @@ textarea::placeholder {
 
   .foot {
     display: none;
-  }
-
-  .c1 {
-    margin-top: 160px;
   }
 }
