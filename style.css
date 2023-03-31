@@ -1,6 +1,6 @@
 /* Google Fonts - Inter */
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;500;700&display=swap");
 
 html,
 body {
@@ -11,6 +11,7 @@ body {
 
 body {
   position: relative;
+  margin: 0;
 }
 
 body::-webkit-scrollbar {
@@ -286,6 +287,15 @@ textarea::placeholder {
   margin-top: 3px;
 }
 
+.btn-see {
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+button:hover {
+  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
+}
+
 @media only screen and (min-width: 767px) {
   #menu {
     display: none;
@@ -426,5 +436,10 @@ textarea::placeholder {
 
   .foot {
     display: none;
+  }
+
+  .f3 {
+    position: absolute;
+    right: 0;
   }
 }
