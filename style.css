@@ -6,6 +6,7 @@ html,
 body {
   font-family: "Inter", sans-serif;
   overflow-x: hidden !important;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -275,6 +276,16 @@ textarea::placeholder {
   display: none;
 }
 
+#social-media {
+  gap: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+#m {
+  margin-top: 3px;
+}
+
 @media only screen and (min-width: 767px) {
   #menu {
     display: none;
@@ -286,6 +297,7 @@ textarea::placeholder {
     text-align: center;
     justify-content: center;
     margin-right: 50px;
+    margin-top: 0;
   }
 
   .navbar > li > a {
@@ -306,12 +318,14 @@ textarea::placeholder {
   }
 
   #d {
-    margin-top: 160px;
+    margin-top: 90px;
   }
 
   #content-1 {
     background-image: url(/imgs/header-img.png);
     background-size: cover;
+    width: 100%;
+    height: 1000px;
     background-repeat: no-repeat;
     margin-top: 0;
   }
@@ -352,9 +366,8 @@ textarea::placeholder {
     width: 600px;
   }
 
-  #footer-social {
-    text-align: center;
-    justify-content: center;
+  #lin {
+    margin-top: -5px;
   }
 
   form {
@@ -401,5 +414,21 @@ textarea::placeholder {
 
   footer {
     margin-left: 50px;
+  }
+
+  /* Marco Animation */
+
+  /* .title:hover {
+    transition: all 0.5s ease;
+    font-size: 2em;
+    color: #0f0;
+  } */
+
+  .foot {
+    display: none;
+  }
+
+  .c1 {
+    margin-top: 160px;
   }
 }
