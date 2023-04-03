@@ -20,6 +20,7 @@ body::-webkit-scrollbar {
 
 #menu {
   float: right;
+  margin-top: -68px;
 }
 
 #content-1 {
@@ -266,7 +267,7 @@ textarea::placeholder {
 .skills-div {
   text-align: center;
   justify-content: center;
-  margin-left: -30px;
+  margin-left: -23px;
 }
 
 .navbar {
