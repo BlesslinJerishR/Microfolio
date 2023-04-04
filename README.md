@@ -26,7 +26,7 @@ After you're finished please remove all the comments and instructions!
 -->
 
 <!-- TABLE OF CONTENTS -->
-
+<!-- Add Accessibility -->
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
