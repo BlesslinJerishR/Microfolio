@@ -297,6 +297,10 @@ button:hover {
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
+#lin {
+  margin-top: -5px;
+}
+
 @media only screen and (min-width: 767px) {
   #menu {
     display: none;
@@ -375,10 +379,6 @@ button:hover {
     text-align: justify;
     height: 500px;
     width: 600px;
-  }
-
-  #lin {
-    margin-top: -5px;
   }
 
   form {

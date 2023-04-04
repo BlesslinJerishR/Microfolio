@@ -65,7 +65,8 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Microfolio](https://microfoliox33.netlify.app/)
+- Github pages : [Microfolio](https://blesslinjerishr.github.io/Microfolio/)
+- Netlify : [Microfolio](https://microfoliox33.netlify.app/)
 
 ### Deployment
 
