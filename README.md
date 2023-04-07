@@ -27,6 +27,7 @@ After you're finished please remove all the comments and instructions!
 
 <!-- TABLE OF CONTENTS -->
 <!-- Add Accessibility -->
+
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
@@ -36,6 +37,7 @@ After you're finished please remove all the comments and instructions!
   - [🚀 Live Demo](#live-demo)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
+- [🔭 Project Presentation Outline](#loom)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [📝 License](#license)
@@ -93,6 +95,10 @@ You can deploy this project using: Netlify
 
 - [ ] **Desktop Version**
 - [ ] **Fully Responsive**
+
+## 🔭 Project Presentation Outline <a name="loom"></a>
+
+- [Loom Video](https://www.loom.com/share/426d6f528cc642d1bf00b64046221459)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- CONTRIBUTING -->
