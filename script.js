@@ -5,8 +5,10 @@ function clickMenu() {
   menu.style.display = 'block';
   ham.style.display = 'none';
 }
+clickMenu('');
 
 function clickX() {
   menu.style.display = 'none';
   ham.style.display = 'block';
 }
+clickX('');
