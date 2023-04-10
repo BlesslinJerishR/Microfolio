@@ -195,9 +195,6 @@ li {
     background-color: #fff;
   }
 
-  #ham-menu:active {
-    transition: all 0.5s ease;
-  }
   .clr-grey {
     line-height: 44px;
     font-weight: 600;
