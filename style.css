@@ -183,6 +183,33 @@ li {
     margin-top: -65px;
     margin-left: 82px;
   }
+
+  #ham-menu {
+    display: none;
+    font-family: "Inter", sans-serif;
+    position: absolute;
+    height: 748px;
+    width: 375px;
+    text-align: left;
+    z-index: 99;
+    background-color: #fff;
+  }
+
+  #ham-menu:active {
+    transition: all 0.5s ease;
+  }
+  .clr-grey {
+    line-height: 44px;
+    font-weight: 600;
+    color: #3a4a42;
+    font-size: 32px !important;
+  }
+
+  #x {
+    position: absolute;
+    margin-left: 322px;
+    margin-top: -55px;
+  }
 }
 
 .skills {
@@ -302,6 +329,10 @@ button:hover {
 }
 
 @media only screen and (min-width: 767px) {
+  #ham-menu {
+    display: none !important;
+  }
+
   #menu {
     display: none;
   }
@@ -440,4 +471,8 @@ button:hover {
   .foot {
     display: none;
   }
+}
+
+a {
+  text-decoration: none;
 }
