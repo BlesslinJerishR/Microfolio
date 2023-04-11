@@ -196,7 +196,17 @@ li {
   }
 
   /* Becky Add style.css for the menu */
-  
+  .clr-grey {
+    line-height: 44px;
+    font-weight: 600;
+    color: #3a4a42;
+    font-size: 32px !important;
+  }
+  #x {
+    position: absolute;
+    margin-left: 322px;
+    margin-top: -55px;
+  }
 }
 
 .skills {
