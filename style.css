@@ -20,7 +20,8 @@ body::-webkit-scrollbar {
 
 #menu {
   float: right;
-  margin-top: -68px;
+  margin-top: -60px;
+  margin-right: 22px;
 }
 
 #content-1 {
@@ -189,7 +190,7 @@ li {
     font-family: "Inter", sans-serif;
     position: absolute;
     height: 748px;
-    width: 375px;
+    width: 100%;
     text-align: left;
     z-index: 99;
     background-color: #fff;
@@ -205,8 +206,10 @@ li {
 
   #x {
     position: absolute;
-    margin-left: 322px;
+    margin-left: 340px;
     margin-top: -55px;
+    height: 12px;
+    width: 12px;
   }
 }
 
