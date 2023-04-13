@@ -80,5 +80,10 @@ form.addEventListener("submit", (event) => {
   } else if (email.value !== email.value.toLowerCase()) {
     errorMessages.push("Email must be in lowercase");
   }
-  //  Bekhi add code
+  if (errorMessages.length > 0) {
+    event.preventDefault();
+    error.textContent = errorMessages.join(".");
+  } else {
+    error.textContent = "";
+  }
 });
