@@ -57,3 +57,9 @@ function pop() {
 function clickPopX() {
   pops.style.display = "none";
 }
+
+const sumbitButton = document.querySelector('.sumbit-btn');
+
+sumbitButton.addEventListener('click', function(){
+  localStorage.setItem('name', )
+})
