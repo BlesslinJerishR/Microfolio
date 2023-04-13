@@ -89,5 +89,6 @@ form.addEventListener('submit', (event) => {
     error.textContent = '';
   }
   localStorage.setItem('name', name.value);
-  // Bheki Add code here
+  localStorage.setItem('email', email.value);
+  localStorage.setItem('text', txt.value);
 });
