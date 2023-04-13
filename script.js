@@ -24,15 +24,17 @@ const h1 = document.createElement('h1');
 h1.innerText = heading;
 he1.appendChild(h1);
 
-const ul = document.getElementById('badges');
-const skills = ['Ruby on Rails', 'CSS', 'JS'];
-const li = document.createElement('li');
+// Skills Badge List  - For popup
+
+// const ul = document.getElementById('badges');
+// const skills = ['Ruby on Rails', 'CSS', 'JS'];
+// const li = document.createElement('li');
 // for (const skill of skills) {
 //   const text = document.createTextNode(skill);
 //   li.appendChild(text);
 //   ul.appendChild(li);
 // }
-li.classList.add('badge');
+// li.classList.add('badge');
 
 const para = document.getElementById('js-p');
 const lorem = 'Lorem Ipsum is simply dummy text of the \nprinting and typesetting industry. Lorem \nIpsum has been the industry\'s standard \ndummy text ever since the 1500s, when \nan unknown printer took a galley of type \nand scrambled it 1960s.\n';
@@ -51,10 +53,12 @@ const pops = document.getElementById('pop-outer');
 function pop() {
   pops.style.display = 'block';
 }
+pop('')
 
 function clickPopX() {
   pops.style.display = 'none';
 }
+clickPopX('')
 
 // Validate Contact Form
 
@@ -79,9 +83,9 @@ form.addEventListener('submit', (event) => {
     errorMessages.push('Email must be in lowercase');
   }
 
-  localStorage.setItem('name', name.value );
-  localStorage.setItem('email', email.value );
-  localStorage.setItem('text', txt.value );
+localStorage.setItem('name', name.value );
+localStorage.setItem('email', email.value );
+localStorage.setItem('text', txt.value );
 
   if (errorMessages.length > 0) {
     event.preventDefault();
