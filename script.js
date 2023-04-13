@@ -62,9 +62,9 @@ function qs(ClassorId) {
   return document.querySelector(ClassorId);
 }
 const form = qs('form');
-const name = qs('input[name='name']');
-const email = qs('input[name='email']');
-const txt = qs('textarea[name='text']');
+const name = qs('input[name="name"]');
+const email = qs('input[name="email"]');
+const txt = qs('textarea[name="text"]');
 const error = qs('error');
 
 form.addEventListener('submit', (event) => {
