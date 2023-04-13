@@ -24,11 +24,11 @@ const h1 = document.createElement('h1');
 h1.innerText = heading;
 he1.appendChild(h1);
 
-var ul = document.getElementById('badges');
+const ul = document.getElementById('badges');
 const skills = ['Ruby on Rails', 'CSS', 'JS'];
 for (const skill of skills) {
-  var li = document.createElement('li');
-  var text = document.createTextNode(skill);
+  const li = document.createElement('li');
+  const text = document.createTextNode(skill);
   li.appendChild(text);
   ul.appendChild(li);
 }
