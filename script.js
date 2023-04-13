@@ -58,8 +58,36 @@ function clickPopX() {
   pops.style.display = "none";
 }
 
-const sumbitButton = document.querySelector('.sumbit-btn');
+// Validate Contact Form
 
-sumbitButton.addEventListener('click', function(){
-  localStorage.setItem('name', )
-})
+function qs(ClassorId) {
+  return document.querySelector(ClassorId);
+}
+const form = qs('form');
+const name = qs('input[name="name"]');
+const email = qs('input[name="email"]');
+const txt = qs('textarea[name="text"]');
+
+form.addEventListener('submit', (event) => {
+  const errorMessages = [];
+  if (name.value.trim() === '') {
+    errorMessages.push('Name is required');
+  } else if (email.value.trim() === '') {
+    errorMessages.push('Email is required');
+  } else if (txt.value.trim() === '') {
+    errorMessages.push('Message is required');
+  } else if (email.value !== email.value.toLowerCase()) {
+    errorMessages.push('Email must be in lowercase');
+  }
+
+  localStorage.setItem('name', name.value );
+  localStorage.setItem('email', email.value );
+  localStorage.setItem('text', txt.value );
+
+  if (errorMessages.length > 0) {
+    event.preventDefault();
+    error.textContent = errorMessages.join('.');
+  } else {
+    error.textContent = '';
+  }
+});
