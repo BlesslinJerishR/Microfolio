@@ -36,14 +36,14 @@ li.classList.add('badge');
 
 let para = document.getElementById('js-p');
 let lorem =
-  'Lorem Ipsum is simply dummy text of the \nprinting and typesetting industry. Lorem \nIpsum has been the industry's standard \ndummy text ever since the 1500s, when \nan unknown printer took a galley of type \nand scrambled it 1960s.\n';
+  "Lorem Ipsum is simply dummy text of the \nprinting and typesetting industry. Lorem \nIpsum has been the industry's standard \ndummy text ever since the 1500s, when \nan unknown printer took a galley of type \nand scrambled it 1960s.\n";
 let p = document.createElement('p');
 p.innerText = lorem;
 para.appendChild(p);
 
 let para2 = document.getElementById('js-p2');
 let lorem2 =
-  'Lorem Ipsum is simply dummy text of the \nprinting and typesetting industry. Lorem \nIpsum has been the industry's standard \ndummy text ever since the 1500s, when \nan unknown printer took a galley of type \nand scrambled it 1960s.\n';
+  "Lorem Ipsum is simply dummy text of the \nprinting and typesetting industry. Lorem \nIpsum has been the industry's standard \ndummy text ever since the 1500s, when \nan unknown printer took a galley of type \nand scrambled it 1960s.\n";
 let p2 = document.createElement('p');
 p2.innerText = lorem2;
 para2.appendChild(p2);
