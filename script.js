@@ -53,7 +53,32 @@ let pops = document.getElementById("pop-outer");
 function pop() {
   pops.style.display = "block";
 }
-
+pop("");
 function clickPopX() {
   pops.style.display = "none";
 }
+clickPopX("");
+
+// Validate Contact Form
+
+function qs(ClassorId) {
+  return document.querySelector(ClassorId);
+}
+const form = qs("form");
+const name = qs('input[name="name"]');
+const email = qs('input[name="email"]');
+const txt = qs('textarea[name="text"]');
+
+form.addEventListener("submit", (event) => {
+  const errorMessages = [];
+  if (name.value.trim() === "") {
+    errorMessages.push("Name is required");
+  } else if (email.value.trim() === "") {
+    errorMessages.push("Email is required");
+  } else if (txt.value.trim() === "") {
+    errorMessages.push("Message is required");
+  } else if (email.value !== email.value.toLowerCase()) {
+    errorMessages.push("Email must be in lowercase");
+  }
+  //  Bekhi add code
+});
