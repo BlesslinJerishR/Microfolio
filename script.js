@@ -69,6 +69,7 @@ const form = qs('form');
 const name = qs('input[name="name"]');
 const email = qs('input[name="email"]');
 const txt = qs('textarea[name="text"]');
+const error = document.getElementById('error');
 
 form.addEventListener('submit', (event) => {
   const errorMessages = [];
@@ -91,4 +92,3 @@ form.addEventListener('submit', (event) => {
   localStorage.setItem('email', email.value);
   localStorage.setItem('text', txt.value);
 });
-
