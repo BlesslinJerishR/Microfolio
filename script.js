@@ -53,12 +53,12 @@ const pops = document.getElementById('pop-outer');
 function pop() {
   pops.style.display = 'block';
 }
-pop('')
+pop('');
 
 function clickPopX() {
   pops.style.display = 'none';
 }
-clickPopX('')
+clickPopX('');
 
 // Validate Contact Form
 
@@ -82,11 +82,9 @@ form.addEventListener('submit', (event) => {
   } else if (email.value !== email.value.toLowerCase()) {
     errorMessages.push('Email must be in lowercase');
   }
-
-localStorage.setItem('name', name.value );
-localStorage.setItem('email', email.value );
-localStorage.setItem('text', txt.value );
-
+  localStorage.setItem('name', name.value );
+  localStorage.setItem('email', email.value );
+  localStorage.setItem('text', txt.value );
   if (errorMessages.length > 0) {
     event.preventDefault();
     error.textContent = errorMessages.join('.');
