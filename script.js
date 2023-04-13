@@ -26,8 +26,8 @@ he1.appendChild(h1);
 
 const ul = document.getElementById('badges');
 const skills = ['Ruby on Rails', 'CSS', 'JS'];
+const li = document.createElement('li');
 for (const skill of skills) {
-  const li = document.createElement('li');
   const text = document.createTextNode(skill);
   li.appendChild(text);
   ul.appendChild(li);
