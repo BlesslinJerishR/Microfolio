@@ -80,7 +80,7 @@ form.addEventListener('submit', (event) => {
   }
   if (errorMessages.length > 0) {
     event.preventDefault();
-    const error = "";
+    const error = '';
     error.textContent = errorMessages.join('.');
   } else {
     error.textContent = '';
