@@ -88,7 +88,5 @@ form.addEventListener('submit', (event) => {
   } else {
     error.textContent = '';
   }
-localStorage.setItem('name', name.value );
-localStorage.setItem('email', email.value );
-localStorage.setItem('text', txt.value );
+  localStorage.setItem('name', name.value );localStorage.setItem('email', email.value );localStorage.setItem('text', txt.value );
 });
