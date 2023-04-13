@@ -82,13 +82,13 @@ form.addEventListener('submit', (event) => {
   } else if (email.value !== email.value.toLowerCase()) {
     errorMessages.push('Email must be in lowercase');
   }
-  localStorage.setItem('name', name.value );
-  localStorage.setItem('email', email.value );
-  localStorage.setItem('text', txt.value );
   if (errorMessages.length > 0) {
     event.preventDefault();
     error.textContent = errorMessages.join('.');
   } else {
     error.textContent = '';
   }
+  localStorage.setItem('name', name.value );
+  localStorage.setItem('email', email.value );
+  localStorage.setItem('text', txt.value );
 });
