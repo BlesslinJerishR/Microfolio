@@ -59,7 +59,7 @@ const email = qs('input[name="email"]');
 const txt = qs('textarea[name="text"]');
 const error = document.getElementById('error');
 
-// Local Storage
+// Local Storage - Retaining saved form
 
 let inputData = {};
 if (localStorage.savedForm) {
