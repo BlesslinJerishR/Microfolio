@@ -24,18 +24,6 @@ const h1 = document.createElement('h1');
 h1.innerText = heading;
 he1.appendChild(h1);
 
-// Skills Badge List  - For popup
-
-// const ul = document.getElementById('badges');
-// const skills = ['Ruby on Rails', 'CSS', 'JS'];
-// const li = document.createElement('li');
-// for (const skill of skills) {
-//   const text = document.createTextNode(skill);
-//   li.appendChild(text);
-//   ul.appendChild(li);
-// }
-// li.classList.add('badge');
-
 const para = document.getElementById('js-p');
 const lorem = 'Lorem Ipsum is simply dummy text of the \nprinting and typesetting industry. Lorem \nIpsum has been the industry\'s standard \ndummy text ever since the 1500s, when \nan unknown printer took a galley of type \nand scrambled it 1960s.\n';
 const p = document.createElement('p');
@@ -71,6 +59,44 @@ const email = qs('input[name="email"]');
 const txt = qs('textarea[name="text"]');
 const error = document.getElementById('error');
 
+// Local Storage
+
+let inputData = {};
+if (localStorage.savedForm) {
+  inputData = JSON.parse(localStorage.getItem('savedForm'));
+}
+
+name.addEventListener('change', () => {
+  inputData.name = name.value;
+});
+
+email.addEventListener('change', () => {
+  inputData.email = email.value;
+});
+
+txt.addEventListener('change', () => {
+  inputData.txt = txt.value;
+});
+
+const fillDataInput = () => {
+  if (inputData.name) {
+    name.value = inputData.name;
+  }
+  if (inputData.email) {
+    email.value = inputData.email;
+  }
+  if (inputData.txt) {
+    txt.value = inputData.txt;
+  }
+};
+
+const populateFields = () => {
+  localStorage.setItem('savedForm', JSON.stringify(inputData));
+  fillDataInput();
+};
+populateFields();
+form.onchange = populateFields;
+
 form.addEventListener('submit', (event) => {
   const errorMessages = [];
   if (name.value.trim() === '') {
@@ -88,7 +114,4 @@ form.addEventListener('submit', (event) => {
   } else {
     error.textContent = '';
   }
-  localStorage.setItem('name', name.value);
-  localStorage.setItem('email', email.value);
-  localStorage.setItem('text', txt.value);
 });
