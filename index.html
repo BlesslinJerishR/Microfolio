@@ -14,8 +14,34 @@
   </head>
   <body>
     <section id="content-1">
+      <div id="ham-menu">
+        <!-- Becky Add X Image -->
+        <img
+          onclick="clickX()"
+          id="x"
+          src="https://img.icons8.com/material-outlined/24/null/delete-sign.png"
+        />
+        <ul>
+          <li>
+            <a onclick="clickX()" href="#portfolio" class="clr-grey"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a onclick="clickX()" href="#about" class="clr-grey">About</a>
+          </li>
+          <li>
+            <a onclick="clickX()" href="#contact" class="clr-grey">Contact</a>
+          </li>
+        </ul>
+      </div>
       <nav>
-        <img id="menu" src="imgs/Union.svg" alt="Hamburger menu icon" />
+        <img
+          onclick="clickMenu()"
+          id="menu"
+          src="imgs/Union.svg"
+          alt="Hamburger menu icon"
+        />
         <ul class="navbar">
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#about">About</a></li>
@@ -73,12 +99,32 @@
         />
       </div>
     </section>
-
     <section class="works" id="portfolio">
       <section id="content-2">
         <h1 class="clr-blue">My Recent <br class="hide" />Works</h1>
         <img src="imgs/Indicator.png" alt="line" />
       </section>
+
+      <section id="pop-outer">
+        <img
+          onclick="clickPopX()"
+          id="pop-x"
+          src="https://img.icons8.com/material-outlined/24/FFFFFF/delete-sign.png"
+        />
+        <div id="popup"></div>
+        <div id="popup-content"></div>
+        <ul id="badges"></ul>
+        <div id="js-p"></div>
+        <div id="js-p2"></div>
+        <button class="btn btn-see btn-live">See live</button>
+        <img
+          id="ext"
+          src="https://img.icons8.com/fluency-systems-filled/48/FFFFFF/external-link.png"
+        />
+        <button class="btn btn-see btn-source">See source</button>
+        <img src="/imgs/g.png" alt="Github Logo" id="g" />
+      </section>
+
       <!-- cards -->
       <div class="works-flex">
         <section class="s-card">
@@ -96,7 +142,53 @@
                 <li class="li-bg">Ruby</li>
                 &nbsp;&nbsp;&nbsp;
               </ul>
-              <button class="btn btn-see">See project</button>
+              <a href="#pop-outer"
+                ><button class="btn btn-see" onclick="pop()">
+                  See project
+                </button></a
+              >
+            </div>
+          </div>
+        </section>
+        <section id="pop-outer">
+          <img
+            onclick="clickPopX()"
+            id="pop-x"
+            src="https://img.icons8.com/material-outlined/24/FFFFFF/delete-sign.png"
+          />
+          <div id="popup"></div>
+          <div id="popup-content"></div>
+          <ul id="badges"></ul>
+          <div id="js-p"></div>
+          <div id="js-p2"></div>
+          <button class="btn btn-see btn-live">See live</button>
+          <img
+            id="ext"
+            src="https://img.icons8.com/fluency-systems-filled/48/FFFFFF/external-link.png"
+          />
+          <button class="btn btn-see btn-source">See source</button>
+          <img src="/imgs/g.png" alt="Github Logo" id="g" />
+        </section>
+        <section class="s-card">
+          <div id="card">
+            <div class="card1">
+              <h3>Multi-Post Stories <br />Gain + Glory</h3>
+              <ul class="li">
+                &nbsp;&nbsp;&nbsp;
+                <li class="li-bg">HTML</li>
+                &nbsp;&nbsp;&nbsp;
+                <li class="li-bg">CSS</li>
+                &nbsp;&nbsp;&nbsp;
+                <li class="li-bg">Javascript</li>
+                &nbsp;&nbsp;&nbsp;
+                <li class="li-bg">Ruby</li>
+                &nbsp;&nbsp;&nbsp;
+              </ul>
+              <a href="#pop-outer"
+                ><button class="btn btn-see" onclick="pop()">
+                  See project
+                </button></a
+              >
             </div>
           </div>
         </section>
@@ -115,7 +207,11 @@
                 <li class="li-bg">Ruby</li>
                 &nbsp;&nbsp;&nbsp;
               </ul>
-              <button class="btn btn-see">See project</button>
+              <a href="#pop-outer"
+                ><button class="btn btn-see" onclick="pop()">
+                  See project
+                </button></a
+              >
             </div>
           </div>
         </section>
@@ -134,7 +230,11 @@
                 <li class="li-bg">Ruby</li>
                 &nbsp;&nbsp;&nbsp;
               </ul>
-              <button class="btn btn-see">See project</button>
+              <a href="#pop-outer"
+                ><button class="btn btn-see" onclick="pop()">
+                  See project
+                </button></a
+              >
             </div>
           </div>
         </section>
@@ -153,7 +253,11 @@
                 <li class="li-bg">Ruby</li>
                 &nbsp;&nbsp;&nbsp;
               </ul>
-              <button class="btn btn-see">See project</button>
+              <a href="#pop-outer"
+                ><button class="btn btn-see" onclick="pop()">
+                  See project
+                </button></a
+              >
             </div>
           </div>
         </section>
@@ -172,26 +276,11 @@
                 <li class="li-bg">Ruby</li>
                 &nbsp;&nbsp;&nbsp;
               </ul>
-              <button class="btn btn-see">See project</button>
-            </div>
-          </div>
-        </section>
-        <section class="s-card">
-          <div id="card">
-            <div class="card1">
-              <h3>Multi-Post Stories <br />Gain + Glory</h3>
-              <ul class="li">
-                &nbsp;&nbsp;&nbsp;
-                <li class="li-bg">HTML</li>
-                &nbsp;&nbsp;&nbsp;
-                <li class="li-bg">CSS</li>
-                &nbsp;&nbsp;&nbsp;
-                <li class="li-bg">Javascript</li>
-                &nbsp;&nbsp;&nbsp;
-                <li class="li-bg">Ruby</li>
-                &nbsp;&nbsp;&nbsp;
-              </ul>
-              <button class="btn btn-see">See project</button>
+              <a href="#pop-outer"
+                ><button class="btn btn-see" onclick="pop()">
+                  See project
+                </button></a
+              >
             </div>
           </div>
         </section>
@@ -298,7 +387,6 @@
               maxlength="30"
               name="name"
               placeholder="&nbsp;&nbsp;&nbsp;Full name"
-              required
             />
             <br />
             <input
@@ -306,7 +394,6 @@
               class="in"
               name="email"
               placeholder="&nbsp;&nbsp;&nbsp;Email address"
-              required
             />
             <br />
             <textarea
@@ -316,13 +403,15 @@
               cols="30"
               rows="10"
               maxlength="500"
-              required
               placeholder="
         Hey I’d like to connect to..."
             ></textarea>
             <img class="foot" src="imgs/footer.png" alt="illustration" />
             <br />
-            <button class="btn btn-2 btn-3" type="submit">Get in touch</button>
+            <button class="btn btn-2 btn-3 submit-btn" type="submit">
+              Get in touch
+            </button>
+            <div id="error"></div>
             <p class="clr-blue hide">blesslinjerish@gmail.com</p>
           </form>
         </section>
@@ -360,5 +449,6 @@
         /></a>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
