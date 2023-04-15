@@ -85,9 +85,8 @@ form.addEventListener('submit', (event) => {
 
 const projectData = [
   {
-    image: './Icons/Card/card_bg.png',
-    imgPopDes: './Icons/Snapshoot-Portfolio.svg',
-    imgPopMob: './Icons/Snapshoot-Portfolio2.svg',
+    imgPopDes: 'imgs/Snapshoot-Portfolio.svg',
+    imgPopMob: 'imgs/popup.png',
     head: 'Multi-Post-Stories',
     headPop: 'Keeping track of hundreds of components',
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960 with the relea Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it",
@@ -97,9 +96,8 @@ const projectData = [
     tagMob: ['Ruby', 'CSS', 'Javascript'],
   },
   {
-    image: './Icons/Card/card_bg.png',
-    imgPopDes: './Icons/Snapshoot-Portfolio.svg',
-    imgPopMob: './Icons/Snapshoot-Portfolio2.svg',
+    imgPopDes: 'imgs/Snapshoot-Portfolio.svg',
+    imgPopMob: 'imgs/popup.png',
     head: 'Multi-Post-Stories',
     headPop: 'Keeping track of hundreds of components',
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960 with the relea Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it",
@@ -109,9 +107,8 @@ const projectData = [
     tagMob: ['Ruby', 'CSS', 'Javascript'],
   },
   {
-    image: './Icons/Card/card_bg.png',
-    imgPopDes: './Icons/Snapshoot-Portfolio.svg',
-    imgPopMob: './Icons/Snapshoot-Portfolio2.svg',
+    imgPopDes: 'imgs/Snapshoot-Portfolio.svg',
+    imgPopMob: 'imgs/popup.png',
     head: 'Multi-Post-Stories',
     headPop: 'Keeping track of hundreds of components',
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960 with the relea Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it",
@@ -121,9 +118,8 @@ const projectData = [
     tagMob: ['Ruby', 'CSS', 'Javascript'],
   },
   {
-    image: './Icons/Card/card_bg.png',
-    imgPopDes: './Icons/Snapshoot-Portfolio.svg',
-    imgPopMob: './Icons/Snapshoot-Portfolio2.svg',
+    imgPopDes: 'imgs/Snapshoot-Portfolio.svg',
+    imgPopMob: 'imgs/popup.png',
     head: 'Multi-Post-Stories',
     headPop: 'Keeping track of hundreds of components',
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960 with the relea Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it",
@@ -133,9 +129,8 @@ const projectData = [
     tagMob: ['Ruby', 'CSS', 'Javascript'],
   },
   {
-    image: './Icons/Card/card_bg.png',
-    imgPopDes: './Icons/Snapshoot-Portfolio.svg',
-    imgPopMob: './Icons/Snapshoot-Portfolio2.svg',
+    imgPopDes: 'imgs/Snapshoot-Portfolio.svg',
+    imgPopMob: 'imgs/popup.png',
     head: 'Multi-Post-Stories',
     headPop: 'Keeping track of hundreds of components',
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960 with the relea Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it",
@@ -145,9 +140,8 @@ const projectData = [
     tagMob: ['Ruby', 'CSS', 'Javascript'],
   },
   {
-    image: './Icons/Card/card_bg.png',
-    imgPopDes: './Icons/Snapshoot-Portfolio.svg',
-    imgPopMob: './Icons/Snapshoot-Portfolio2.svg',
+    imgPopDes: 'imgs/Snapshoot-Portfolio.svg',
+    imgPopMob: 'imgs/popup.png',
     head: 'Multi-Post-Stories',
     headPop: 'Keeping track of hundreds of components',
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960 with the relea Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it",
@@ -177,11 +171,9 @@ for (let i = 0; i < projectData.length; i += 1) {
             <li class="li-bg">${projectData[i].tags[3]}</li>
             &nbsp;&nbsp;&nbsp;
           </ul>
-          <a href="#pop-outer"
-            ><button class="btn btn-see" onclick="pop()">
+          <button class="btn btn-see" id="btn-${i}">
               See project
-            </button></a
-          >
+          </button>
         </div>
       </div>
     </section>
@@ -203,8 +195,8 @@ for (let j = 0; j < projectData.length; j += 1) {
       <div class="pop-details">
         <h3>${projectData[j].headPop}</h3>
         <div class="pop-button">
-          <button type="button">See live <img src="Icons/Icon.svg" alt=""></button>
-          <button type="button"> <span>See source</span> <img src="Icons/Vector.svg" alt=""></button>
+          <button type="button">See live <img src="imgs/Icon.svg" alt=""></button>
+          <button type="button"> <span>See source</span> <img src="imgs/Vector.svg" alt=""></button>
         </div>
       </div>
       <ul class="pop-list">
@@ -222,8 +214,8 @@ for (let j = 0; j < projectData.length; j += 1) {
       </ul>
       <p class="pop-desc">${projectData[j].text}</p>
       <div class="pop-button-mobile">
-        <button type="button"> <span>See live </span> <img src="Icons/Icon.svg" alt=""></button>
-        <button type="button"> <span>See source</span> <img src="Icons/Vector.svg" alt=""></button>
+        <button type="button"> <span>See live </span> <img src="imgs/Icon.svg" alt=""></button>
+        <button type="button"> <span>See source</span> <img src="imgs/Vector.svg" alt=""></button>
       </div>
     </div>
       `;
