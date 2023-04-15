@@ -228,4 +228,3 @@ for (let j = 0; j < projectData.length; j += 1) {
     });
   });
 }
-
