@@ -15,7 +15,6 @@
   <body>
     <section id="content-1">
       <div id="ham-menu">
-        <!-- Becky Add X Image -->
         <img
           onclick="clickX()"
           id="x"
@@ -105,7 +104,7 @@
         <img src="imgs/Indicator.png" alt="line" />
       </section>
 
-      <section id="pop-outer">
+      <!-- <section id="pop-outer">
         <img
           onclick="clickPopX()"
           id="pop-x"
@@ -123,169 +122,17 @@
         />
         <button class="btn btn-see btn-source">See source</button>
         <img src="/imgs/g.png" alt="Github Logo" id="g" />
-      </section>
+      </section> -->
 
       <!-- cards -->
-      <div class="works-flex">
-        <section class="s-card">
-          <div id="card">
-            <div class="card1">
-              <h3>Multi-Post Stories <br />Gain + Glory</h3>
-              <ul class="li">
-                &nbsp;&nbsp;&nbsp;
-                <li class="li-bg">HTML</li>
-                &nbsp;&nbsp;&nbsp;
-                <li class="li-bg">CSS</li>
-                &nbsp;&nbsp;&nbsp;
-                <li class="li-bg">Javascript</li>
-                &nbsp;&nbsp;&nbsp;
-                <li class="li-bg">Ruby</li>
-                &nbsp;&nbsp;&nbsp;
-              </ul>
-              <a href="#pop-outer"
-                ><button class="btn btn-see" onclick="pop()">
-                  See project
-                </button></a
-              >
-            </div>
-          </div>
-        </section>
-        <section id="pop-outer">
-          <img
-            onclick="clickPopX()"
-            id="pop-x"
-            src="https://img.icons8.com/material-outlined/24/FFFFFF/delete-sign.png"
-          />
-          <div id="popup"></div>
-          <div id="popup-content"></div>
-          <ul id="badges"></ul>
-          <div id="js-p"></div>
-          <div id="js-p2"></div>
-          <button class="btn btn-see btn-live">See live</button>
-          <img
-            id="ext"
-            src="https://img.icons8.com/fluency-systems-filled/48/FFFFFF/external-link.png"
-          />
-          <button class="btn btn-see btn-source">See source</button>
-          <img src="/imgs/g.png" alt="Github Logo" id="g" />
-        </section>
-        <section class="s-card">
-          <div id="card">
-            <div class="card1">
-              <h3>Multi-Post Stories <br />Gain + Glory</h3>
-              <ul class="li">
-                &nbsp;&nbsp;&nbsp;
-                <li class="li-bg">HTML</li>
-                &nbsp;&nbsp;&nbsp;
-                <li class="li-bg">CSS</li>
-                &nbsp;&nbsp;&nbsp;
-                <li class="li-bg">Javascript</li>
-                &nbsp;&nbsp;&nbsp;
-                <li class="li-bg">Ruby</li>
-                &nbsp;&nbsp;&nbsp;
-              </ul>
-              <a href="#pop-outer"
-                ><button class="btn btn-see" onclick="pop()">
-                  See project
-                </button></a
-              >
-            </div>
-          </div>
-        </section>
-        <section class="s-card">
-          <div id="card">
-            <div class="card1">
-              <h3>Multi-Post Stories <br />Gain + Glory</h3>
-              <ul class="li">
-                &nbsp;&nbsp;&nbsp;
-                <li class="li-bg">HTML</li>
-                &nbsp;&nbsp;&nbsp;
-                <li class="li-bg">CSS</li>
-                &nbsp;&nbsp;&nbsp;
-                <li class="li-bg">Javascript</li>
-                &nbsp;&nbsp;&nbsp;
-                <li class="li-bg">Ruby</li>
-                &nbsp;&nbsp;&nbsp;
-              </ul>
-              <a href="#pop-outer"
-                ><button class="btn btn-see" onclick="pop()">
-                  See project
-                </button></a
-              >
-            </div>
-          </div>
-        </section>
-        <section class="s-card">
-          <div id="card">
-            <div class="card1">
-              <h3>Multi-Post Stories <br />Gain + Glory</h3>
-              <ul class="li">
-                &nbsp;&nbsp;&nbsp;
-                <li class="li-bg">HTML</li>
-                &nbsp;&nbsp;&nbsp;
-                <li class="li-bg">CSS</li>
-                &nbsp;&nbsp;&nbsp;
-                <li class="li-bg">Javascript</li>
-                &nbsp;&nbsp;&nbsp;
-                <li class="li-bg">Ruby</li>
-                &nbsp;&nbsp;&nbsp;
-              </ul>
-              <a href="#pop-outer"
-                ><button class="btn btn-see" onclick="pop()">
-                  See project
-                </button></a
-              >
-            </div>
-          </div>
-        </section>
-        <section class="s-card">
-          <div id="card">
-            <div class="card1">
-              <h3>Multi-Post Stories <br />Gain + Glory</h3>
-              <ul class="li">
-                &nbsp;&nbsp;&nbsp;
-                <li class="li-bg">HTML</li>
-                &nbsp;&nbsp;&nbsp;
-                <li class="li-bg">CSS</li>
-                &nbsp;&nbsp;&nbsp;
-                <li class="li-bg">Javascript</li>
-                &nbsp;&nbsp;&nbsp;
-                <li class="li-bg">Ruby</li>
-                &nbsp;&nbsp;&nbsp;
-              </ul>
-              <a href="#pop-outer"
-                ><button class="btn btn-see" onclick="pop()">
-                  See project
-                </button></a
-              >
-            </div>
-          </div>
-        </section>
-        <section class="s-card">
-          <div id="card">
-            <div class="card1">
-              <h3>Multi-Post Stories <br />Gain + Glory</h3>
-              <ul class="li">
-                &nbsp;&nbsp;&nbsp;
-                <li class="li-bg">HTML</li>
-                &nbsp;&nbsp;&nbsp;
-                <li class="li-bg">CSS</li>
-                &nbsp;&nbsp;&nbsp;
-                <li class="li-bg">Javascript</li>
-                &nbsp;&nbsp;&nbsp;
-                <li class="li-bg">Ruby</li>
-                &nbsp;&nbsp;&nbsp;
-              </ul>
-              <a href="#pop-outer"
-                ><button class="btn btn-see" onclick="pop()">
-                  See project
-                </button></a
-              >
-            </div>
-          </div>
-        </section>
+      <div class="works-flex" id="page">
+
       </div>
     </section>
+
+    <!-- Dynamic Cards JS -->
+    <div class="works-grid-container" id="page"></div>
+
     <section class="content-3 center" id="about">
       <img class="abt-1" src="imgs/about1.png" alt="background icon" />
       <h1 class="clr-blue">About me</h1>

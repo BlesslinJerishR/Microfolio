@@ -560,8 +560,12 @@ button:hover {
   .foot {
     display: none;
   }
+
+  /* PopUp */
 }
 
 a {
   text-decoration: none;
 }
+
+/* PopUp */
