@@ -206,7 +206,6 @@ for (let j = 0; j < projectData.length; j += 1) {
         <li>${projectData[j].tags2[3]}</li>
         <li>${projectData[j].tags2[4]}</li>
       </ul>
-
       <ul class="pop-list-mobile">
         <li>${projectData[j].tagMob[0]}</li>
         <li>${projectData[j].tagMob[1]}</li>
@@ -219,6 +218,8 @@ for (let j = 0; j < projectData.length; j += 1) {
       </div>
     </div>
       `;
+
+      // Close Button Logic
       const close = document.querySelector('.close-btn');
       close.addEventListener('click', () => {
         const modal = document.querySelector('.modal');
