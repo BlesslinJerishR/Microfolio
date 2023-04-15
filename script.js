@@ -1,8 +1,8 @@
 // Error 1
-const menu = document.getElemenstById('ham-menu');
+const menu = document.getElementById('ham-menu');
 const ham = document.getElementById('menu');
 // Error 2
-function clickMenu('') {
+function clickMenu() {
   menu.style.display = 'block';
   ham.style.display = 'none';
 }
@@ -10,7 +10,7 @@ clickMenu('');
 // Error 3
 function clickX() {
   menu.style.display = 'none';
-  ham.styles.display = 'block';
+  ham.style.display = 'block';
 }
 clickX('');
 
