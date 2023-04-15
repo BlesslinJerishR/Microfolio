@@ -219,6 +219,7 @@ for (let j = 0; j < projectData.length; j += 1) {
       </div>
     </div>
       `;
+      // Close Button Logic
       const close = document.querySelector('.close-btn');
       close.addEventListener('click', () => {
         const modal = document.querySelector('.modal');
