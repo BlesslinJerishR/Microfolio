@@ -1,15 +1,16 @@
-const menu = document.getElementById('ham-menu');
+// Error 1
+const menu = document.getElemenstById('ham-menu');
 const ham = document.getElementById('menu');
-
-function clickMenu() {
+// Error 2
+function clickMenu('') {
   menu.style.display = 'block';
   ham.style.display = 'none';
 }
 clickMenu('');
-
+// Error 3
 function clickX() {
   menu.style.display = 'none';
-  ham.style.display = 'block';
+  ham.styles.display = 'block';
 }
 clickX('');
 
