@@ -180,7 +180,44 @@ for (let i = 0; i < projectData.length; i += 1) {
   `;
 }
 
-// Bheki - Code Model Js
+const model = document.getElementById('modal1');
+for (let j = 0; j < projectData.length; j += 1) {
+  const projectBtn = document.querySelectorAll(`[id=btn-${j}]`);
+  projectBtn.forEach((e) => {
+    e.addEventListener('click', () => {
+      // console.log("Button is clicked");
+      model.style.display = 'block';
+      model.innerHTML = `
+      <div class="pop-up">
+      <span class="close-btn">X</span>
+      <img src= "${projectData[j].imgPopMob}" alt="popup-image" class="pop-mobile-image">
+      <img class="pop-image" src="${projectData[j].imgPopDes}" alt="card-image1" />
+      <div class="pop-details">
+        <h3>${projectData[j].headPop}</h3>
+        <div class="pop-button">
+          <button type="button">See live <img src="imgs/Icon.svg" alt=""></button>
+          <button type="button"> <span>See source</span> <img src="imgs/Vector.svg" alt=""></button>
+        </div>
+      </div>
+      <ul class="pop-list">
+        <li>${projectData[j].tags2[0]}</li>
+        <li>${projectData[j].tags2[1]}</li>
+        <li>${projectData[j].tags2[2]}</li>
+        <li>${projectData[j].tags2[3]}</li>
+        <li>${projectData[j].tags2[4]}</li>
+      </ul>
+      <ul class="pop-list-mobile">
+        <li>${projectData[j].tagMob[0]}</li>
+        <li>${projectData[j].tagMob[1]}</li>
+        <li>${projectData[j].tagMob[2]}</li>
+      </ul>
+      <p class="pop-desc">${projectData[j].text}</p>
+      <div class="pop-button-mobile">
+        <button type="button"> <span>See live </span> <img src="imgs/Icon.svg" alt=""></button>
+        <button type="button"> <span>See source</span> <img src="imgs/Vector.svg" alt=""></button>
+      </div>
+    </div>
+      `;
 
       // Close Button Logic
       const close = document.querySelector('.close-btn');
@@ -191,3 +228,4 @@ for (let i = 0; i < projectData.length; i += 1) {
     });
   });
 }
+
