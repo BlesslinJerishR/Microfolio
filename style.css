@@ -213,6 +213,7 @@ li {
   }
 
   #pop-outer {
+    display: none;
     height: 836px;
     width: 375px;
     width: max-content;
@@ -263,6 +264,7 @@ li {
     font-size: 17px;
     font-weight: 500;
   }
+
   .btn-source {
     width: 156px;
     font-size: 17px;
@@ -280,10 +282,6 @@ li {
     position: absolute;
     margin-top: 20px;
     margin-left: -30px;
-  }
-
-  #pop-outer {
-    display: none;
   }
 
   #pop-x {
